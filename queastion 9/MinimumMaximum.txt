@@ -1,0 +1,55 @@
+//importing scanner class to take the input from the user
+import java.util.Scanner;
+import java.util.Arrays;
+public class MinimumMaximum {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		//length of array
+		System.out.println("Enter the length of the array1");
+		int length1=sc.nextInt();
+	
+		int[] a=new int[length1];
+		//enter elements
+		System.out.println("Enter the elements into first array");
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		//enter second length of array 
+		System.out.println("Enter the length of the 2nd array");
+		int length2=sc.nextInt();
+		//enter the elements
+		System.out.println("Enter the elements into 2nd array");
+		int[] b=new int[length2];
+		for(int i=0;i<b.length;i++)
+		{
+			b[i]=sc.nextInt();
+		}
+		//sorting array
+		Arrays.sort(a);
+		Arrays.sort(b);
+		
+		toDisplay(a,b);
+	}
+	public static void toDisplay(int[] a,int[] b)
+  {  int mina=0,minb=0;
+	for(int i=0;i<a.length;i++) 
+	{
+		if(a[a.length-1]>a[i])
+		{
+			mina=a[i];
+		}
+	}
+	System.out.println(mina);
+	//take first element
+	for(int i=0;i<b.length;i++)
+	{
+		if(b[b.length-1]>b[i])
+		{
+			minb=b[i];
+		}
+	}
+	System.out.println(minb);
+  }
+}

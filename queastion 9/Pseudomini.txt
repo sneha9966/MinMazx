@@ -1,0 +1,30 @@
+Pseudo code
+
+
+PROGRAM MinimumMaximum
+
+step1: take input from the user
+step2: length of first array
+step3: elements of first array
+step4: length of second array
+step5: elements of second array
+step6: sorting method
+step6: for(int i=0;i<a.length;i++) 
+	{
+		if(a[a.length-1]>a[i])
+		{
+			mina=a[i];
+		}
+	}
+	System.out.println(mina);
+for(int i=0;i<b.length;i++)
+	{
+		if(b[b.length-1]>b[i])
+		{
+			minb=b[i];
+		}
+	}
+	System.out.println(minb);
+  }
+}
+     
